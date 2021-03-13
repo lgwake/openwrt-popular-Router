@@ -60,7 +60,8 @@ jobs:
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P1_SH
     - name: download autoaprepeater souce code
-      run: cd /openwrt/package/utils && git clone https://github.com/brightsm/luci-app-autorepeater
+      run: cd ./openwrt/package/utils && git clone https://github.com/brightsm/luci-app-autorepeater
+      
     - name: Update feeds
       run: cd openwrt && ./scripts/feeds update -a
 
