@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: build_R619AC_LEDE_OPENWRT
+name: build_HG255D_LEDE_OPENWRT
 
 # Controls when the action will run. 
 on:
@@ -9,14 +9,14 @@ on:
     inputs:
       ssh:
         description: 'SSH connection to Actions'
-        required: false
-        default: 'false'
+        required: true
+        default: 'true'
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: P2W_R619AC_config
+  CONFIG_FILE: HG255D.config
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
   UPLOAD_BIN_DIR: true
