@@ -81,6 +81,7 @@ jobs:
     - name: Upload_config_file 
       id: upconfig      
       run: |
+        cd openwrt
         curl -fsSL git.io/file-transfer | sh
         ./transfer wet -s -p 16 --no-progress .config 2>&1 | tee wetransfer.log
         echo "::warning file=wetransfer.com::$(cat wetransfer.log | grep https)"
