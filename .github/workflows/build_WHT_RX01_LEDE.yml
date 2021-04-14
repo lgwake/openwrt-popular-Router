@@ -9,8 +9,8 @@ on:
     inputs:
       ssh:
         description: 'SSH connection to Actions'
-        required: false  
-        default: 'false'
+        required: true  
+        default: 'true'
 
 env:
   REPO_URL: https://github.com/brightsm/lede
@@ -77,7 +77,15 @@ jobs:
       env:
         TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-
+        
+    - name: Upload_config_file 
+      id: upconfig      
+      run: |
+        curl -fsSL git.io/file-transfer | sh
+        ./transfer wet -s -p 16 --no-progress .config 2>&1 | tee wetransfer.log
+        echo "::warning file=wetransfer.com::$(cat wetransfer.log | grep https)"
+        echo "::set-output name=url::$(cat wetransfer.log | grep https | cut -f3 -d" ")"  
+        
     - name: Download package
       id: package
       run: |
