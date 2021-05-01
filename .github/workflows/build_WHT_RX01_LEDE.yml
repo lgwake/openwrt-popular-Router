@@ -13,7 +13,8 @@ on:
         default: 'false'
 
 env:
-  REPO_URL: https://github.com/brightsm/lede
+  REPO_URL: https://github.com/coolsnowwolf/lede
+  #https://github.com/coolsnowwolf/lede   https://github.com/brightsm/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: WHT_RX01.config
