@@ -14,7 +14,7 @@ on:
         default: 'false'
 
 env:
-  REPO_URL: https://github.com/coolsnowwolf/lede
+  REPO_URL: https://github.com/brightsm/lede  #coolsnowwolf
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: P2W_R619AC_AutoApRepeater.config
