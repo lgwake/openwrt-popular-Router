@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build OpenWrt
+name: Build RAX30000M OpenWrt 23.05
 
 on:
   repository_dispatch:
@@ -20,7 +20,7 @@ on:
         default: 'false'
 
 env:
-  REPO_URL: https://github.com/openwrt/openwrt
+  REPO_URL: https://githubfast.com/openwrt/openwrt
   REPO_BRANCH: v23.05.2
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: 23.05.2.config
