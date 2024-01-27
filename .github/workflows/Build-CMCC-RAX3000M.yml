@@ -21,7 +21,7 @@ on:
 
 env:
   #REPO_URL: https://githubfast.com/bwnqx/immortalwrt-mt798x
-  REPO_URL: https://github.com/bwnqx/immortalwrt-mt798x
+  REPO_URL: https://githubfast.com/bwnqx/immortalwrt-mt798x
   REPO_BRANCH: openwrt-21.02
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: RAX3000M-237-3km.config
@@ -128,7 +128,7 @@ jobs:
         cd openwrt/bin/targets/*/*
         rm -rf packages
         echo "FIRMWARE=$PWD" >> $GITHUB_ENV        
-        run: echo "{status}={success}" >> $GITHUB_OUTPUT
+        echo "{status}={success}" >> $GITHUB_OUTPUT
 
     - name: Upload firmware directory
       uses: actions/upload-artifact@main
