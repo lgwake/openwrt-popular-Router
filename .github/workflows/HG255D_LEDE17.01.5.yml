@@ -17,7 +17,7 @@ on:
 
 env:
   #REPO_URL: https://github.com/brightsm/lede
-  REPO_URL: https://github.com/coolsnowwolf/lede
+  REPO_URL: https://github.com/brightsm/lede-17.01.5
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: LEDE-K2P.config
