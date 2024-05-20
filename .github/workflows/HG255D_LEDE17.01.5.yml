@@ -1,7 +1,7 @@
 
 # This is a basic workflow to help you get started with Actions
 
-name: build_HG255D_LEDE V17.01.5
+name: build_HG255D_LEDE V17.01.7
 #add autoaprepeater app
 
 # Controls when the action will run. 
