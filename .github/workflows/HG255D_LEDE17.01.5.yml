@@ -34,7 +34,7 @@ jobs:
 
     steps:
     - name: Checkout
-      uses: actions/checkout@v17.01.5
+      uses: actions/checkout@lede-17.01
 
     - name: Initialization environment
       env:
