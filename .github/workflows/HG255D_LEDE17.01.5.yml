@@ -16,7 +16,7 @@ on:
 
 env:
   #REPO_URL: https://github.com/openwrt/openwrt
-  REPO_URL: https://brightsm/lede-17.01.4-Mod
+  REPO_URL: https://github.com/brightsm/lede-17.01.4-Mod
   #REPO_BRANCH: v17.01.7
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
